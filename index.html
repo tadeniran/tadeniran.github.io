@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+
+<style>
+
+.navmenu{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font: bold 10px 'Lato', sans-serif; /* use google custom font "Lato" */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.navmenu li{
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 100px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.navmenu li a{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px; /* height of links */
+  padding: 0 10px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  outline: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-bottom: 8px solid rgba(0,0,0,.1);
+  opacity: 1;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  /* 18 * 0.0555 = 1px */
+  letter-spacing: 0.0555em;
+  background: #000; /* default background color */
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* center text horizontally */
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; /* center text vertically */
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+/* Create shimmering effect */
+.navmenu li a:after{
+  content: '';
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  background: white;
+  opacity: .5;
+  top: 0;
+  left: -50%;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+
+.navmenu li:nth-of-type(2) a{
+	color: white;
+  background: #000;
+}
+
+.navmenu li:nth-of-type(3) a{
+	color: white;
+  background: #000;
+}
+
+.navmenu li:nth-of-type(4) a{
+	color: white;
+  background: #000;
+}
+
+.navmenu li:nth-of-type(5) a{
+	color: white;
+  background: #000;
+}
+
+.navmenu li a:hover{
+  opacity: .7;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.navmenu li a:hover:after{
+  left: 150%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.navmenu li a:active{
+  box-shadow: 0 -30px 10px rgba(255,255,255,.2) inset;
+  border-bottom-width: 0;
+  box-shadow: none;
+  border-top: 8px solid rgba(0,0,0,.1);
+  -webkit-transition: none;
+  transition: none;
+}
+
+@media screen and (max-width:760px){
+  .navmenu li a{
+    font-size: 1.5em;
+  }
+  
+}
+
+</style>
+<link href="finHOMEPAGE.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+<title>FIN HOMEPAGE</title>
+</head>
+
+<body>
+
+<table width="90%" align="center" >
+  <tr>
+    <td colspan="3" align="center"> 
+    <img src="IMAGES/GOLDLINE.png" width="1160" height="69">
+    <p><img src="IMAGES/HEADER.png" width="700" height="117" align="top"></p>
+    <p><img src="IMAGES/GOLDLINE.png" width="866" height="46"></p></td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center">
+      <ul class="navmenu">
+	<li><a href="index.html">HOME</a></li>
+	<li><a href="finFOXYFILTERS.html">FOXY FILTERS</a></li>
+	<li><a href="finRESUME.html">RESUME</a></li>
+	<li><a href="finGALLERY.html">GALLERY</a></li>
+	<li><a href="finCONTACT.html">CONTACT</a></li>
+</ul>
+      
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" align="center"></td>
+    <td width="58%" height="258" align="center"><p><img src="IMAGES/IMAGE1.jpg" width="150" height="262"> <img src="IMAGES/IMAGE2.jpg" width="150" height="258"> <img src="IMAGES/IMAGE3.jpg" width="150" height="256"></p>
+    <p><img src="IMAGES/GOLDLINE.png" width="700" height="50"></p>
+    <p><img src="IMAGES/titles.png" width="650" height="40"></p>
+    <p>&nbsp;</p></td>
+    <td width="23%">&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td></td>
+    
+  <tr>
+    <td><!-- #BeginDate format:Am1a -->August 7, 2018 1:54 PM<!-- #EndDate --></td>
+    <td align="center"><a href="http://www.kennesaw.edu/">KSU</a> | <a href="https://www.youtube.com/">YOUTUBE</a> | <a href="https://www.google.com/">GOOGLE</a></td>
+    <td align="right"> Copyright © 2018 - Adeola Adeniran </td>
+  
+</table>
+</body>
+</html>
